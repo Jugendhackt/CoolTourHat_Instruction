@@ -1,0 +1,220 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica", Arial, sans-serif;
+    color: #000000;
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    overflow-y: scroll;
+    height: 100%;
+}
+html {
+    background: #ffffff;
+    height: 100%;
+}
+div#title {
+    border-bottom: 1px solid #e5e5e5;
+    background: orange; /* in case there is no gradient support (very very old browsers) */
+    background: -webkit-linear-gradient(left, orange , yellow);
+    background: -o-linear-gradient(right, orange, yellow);
+    background: -moz-linear-gradient(right, orange, yellow);
+    background: linear-gradient(to right, orange , yellow);
+    padding: 15px 0px;
+    margin-bottom: 20px;
+}
+div#title h1 {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: left;
+    margin-right: 15px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div#title span {
+    font-size: 16px;
+    color: #444;
+    display: inline-block;
+}
+#language {
+    padding: 22px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+#language input {
+    height: 20px;
+    margin-left: 5px;
+}
+#language input:hover {
+    opacity: 0.5;
+}
+.content-box {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+@media screen and (max-width: 900px) {
+    .content-box {
+        width: 100% !important;
+    }
+    #contentwrapper {
+        padding-bottom: 100px !important;
+    }
+}
+a {
+    text-decoration: none;
+    color: #2222ff;
+    border-radius: 0px;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+img, a img {
+    border: none;
+}
+*:focus {
+    outline: none;
+}
+*::-moz-focus-inner {
+    border: 0;
+}
+ a.button {
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    margin-top: 15px;
+    color: white!important;
+    font-size: 18px;
+    background-color: #4285f4;
+    transition: all 0.1s ease-in-out;
+}
+a.button:hover {
+    background-color: #2163D0;
+}
+#footer {
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 15px 0px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.mainpage #section1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+#main_img {
+    margin: 0px auto;
+    width: 600px;
+    display: block;
+}
+@media screen and (max-width: 780px) {
+    #main_img {
+        width: 100%;
+    }
+}
+#contentwrapper {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 67px;
+}
+.text_block {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    background-color: #f1f1f1;
+}
+.question > h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.question > div {
+    transition: all 0.1s ease-in-out;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 5px;
+}
+.question > div:hover {
+    background-color: #fcfcfc;
+}
+.question > div > img {
+    width: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+#input_range {
+    width: 300px;
+    max-width: 100%;
+    margin-top: 30px;
+}
+#last_modified {
+    font-size: 14px;
+}
+.description_block > h2 {
+    font-weight: normal;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.description_block p.notice {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-left: 5px solid #ccc;
+}
+.description_block p.important {
+    padding: 10px;
+    margin: 10px;
+    margin-right: 0px;
+    border-left: 5px solid #CE0A0A;
+}
+.description_block img.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+.description_block ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description_block li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.progress-bar {
+    background-color: #4285f4;
+}
+.progress-bar > b{
+    padding-left: 5px;
+}
+.animate-container.ng-enter, .animate-container.ng-leave {
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+    position: relative;
+}
+ .animate-container.ng-enter {
+    opacity: 0;
+    top: 999px;
+}
+ .animate-container.ng-enter.ng-enter-active {
+    opacity:1;
+    top: 0px;
+}
+ .animate-container.ng-leave {
+    opacity:1;
+    top: 0px;
+}
+ .animate-container.ng-leave.ng-leave-active {
+    opacity:0;
+    top: 999px;
+}

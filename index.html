@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="HowToApp">
+    <head>
+        <title>CoolTourHat</title>
+        
+        <meta charset="UTF-8" />
+        <meta name="description" content="CoolToutHat instruction" />
+        <link rel="icon" href="favicon.svg" type="image/svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/input-range.css" type="text/css" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="js/angular-animate.min.js"></script>
+        <script type="text/javascript" src="js/angular-translate.js"></script>
+        <script type="text/javascript" src="js/angular-translate-loader-url.js"></script>
+        <script type="text/javascript" src="js/angular-translate-loader-static-files.js"></script>
+        <script type="text/javascript" src="js/angular-translate-storage-cookie.js"></script>
+        <script type="text/javascript" src="js/angular-translate-storage-local.js"></script>
+        <script type="text/javascript" src="js/angular-ui-bootstrap.js"></script>
+        
+
+    </head>
+    <body ng-controller="MainController">
+        <div id="contentwrapper">
+            <div id="title">
+              <div class="content-box">
+                  <h1 translate ng-click="showStartPage()">PAGE_TITLE</h1>
+                  <span translate>DESCRIPTION</span>
+              </div>
+              <div id="language">
+                  <input ng-repeat="lang in languages" type="image" ng-click="changeLanguage(lang)" ng-src="{{getLanguageImageUrl(lang)}}" alt="{{ lang }}" width="40" height="20"></input>
+              </div>
+            </div>
+        <noscript>This Website can not be displayed without Java Script.<br>
+        Diese Seite kann nicht ohne Java Script angezeigt werden.</noscript>
+        <div id="content" ng-include='"include/"+content_include+".html"' class="content-box animate-container"></div>
+        <div id="footer">
+          <div class="content-box">
+              <a ng-click="showSources()" translate>SOURCES</a> • 
+              <a ng-click="showImpressum()" translate>Impressum</a> • 
+              <span translate>COPYRIGHT</span> •
+              <a href="http://www.jugendhackt.de" target="_blank">Jugend&nbsp;hackt</a> • 
+              <a href="https://github.com/Jugendhackt/CoolTourHat/issues/new" target="_blank" translate>BUGREPORT</a>
+          </div>
+        </div>
+        <script src="js/site.js"></script>
+    </body>
+</html>
