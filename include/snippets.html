@@ -2,5 +2,6 @@
 <div ng-show="client == 'enterprise'">
   <div ng-class="textblock_classes" ng-include='getPartial("shoppinglist_th")'></div>
   <div ng-class="textblock_classes" ng-include='getPartial("warning_soldering")'></div>
+  <div ng-class="textblock_classes" ng-show="os == 'windows'" ng-include='getPartial("driver_w")'></div>
   <div ng-class="textblock_classes" ng-include='getPartial("ble")'></div>
 </div>
